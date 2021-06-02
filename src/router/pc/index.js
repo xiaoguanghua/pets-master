@@ -2,6 +2,7 @@ import Vue from 'vue'
 import Router from 'vue-router'
 import HelloWorld from '@/components/pc/HelloWorld'
 import SecondPage from '@/components/pc/secondPage'
+import secretPage from '@/components/pc/secretPage'
 
 Vue.use(Router)
 
@@ -16,6 +17,11 @@ let router = new Router({
       path: '/secondPage',
       name: 'secondPage',
       component: SecondPage
+    },
+    {
+      path: '/secretPage',
+      name: 'secretPage',
+      component: secretPage
     }
   ]
 })
